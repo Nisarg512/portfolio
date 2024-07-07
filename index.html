@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzUyOXwwfDF8c2VhcmNofDJ8fGxhcHRvcCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNjI0ODQxOTY3&ixlib=rb-1.2.1&q=80&w=1080');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ffffff; /* White text for better contrast */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, section, footer {
+            background: rgba(0, 0, 0, 0.7); /* Slightly transparent dark background */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        header {
+            text-align: center; /* Center align header content */
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: center; /* Center align navigation links */
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #ffffff; /* White color for links */
+            text-decoration: none;
+            font-size: 1.2em; /* Larger font size for navigation */
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+        nav ul li a:hover {
+            color: #007bff; /* Hover color */
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff; /* Blue button */
+            color: #ffffff; /* White text */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background and transform transition */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: translateY(-2px); /* Move button up slightly on hover */
+        }
+        .social ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: center; /* Center align social icons */
+        }
+        .social ul li {
+            margin-right: 20px;
+        }
+        .social ul li a {
+            color: #ffffff; /* White color for social icons */
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+        .social ul li a:hover {
+            color: #007bff; /* Hover color */
+        }
+        section {
+            text-align: center; /* Center align section content */
+        }
+        .project {
+            background: rgba(0, 0, 0, 0.7); /* Slightly transparent background for project section */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .project h3 {
+            font-size: 1.8em;
+        }
+        .project p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .profile {
+            background: rgba(0, 0, 0, 0.7); /* Slightly transparent background for profile section */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: center; /* Center align profile content */
+        }
+        .profile img {
+            width: 150px; /* Adjust size of profile photo as needed */
+            border-radius: 50%; /* Rounded border for circular profile photo */
+            margin-bottom: 20px; /* Space between photo and text */
+        }
+        .profile h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .profile p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="profile">
+                <img src="D:\6 th sem nisarg\portfolio\4.2.png" alt="Profile Photo">
+                <h2>NISARG PATEL</h2>
+                <p>Computer Engineering Student<br>college:U.V Patel college of Engineering<br>DOB:05/12/2003<br>Sem:7th sem</p>
+                <p>I am a passionate computer engineering student with a keen interest in web development, APIs, databases, and more. Currently pursuing my degree with a focus on learning and applying emerging technologies to solve real-world problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Gym Management System</h3>
+                <p>This project includes API integration, database management, AJAX interactions, and a user-friendly interface.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:your.email@example.com">nisargapatel21@gnu.ac.in</a> or follow me on social media:</p>
+            <ul class="social">
+                <li><a href="https://www.linkedin.com/in/nisarg-patel-42518222b"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Nisarg512"><i class="fab fa-github"></i></a></li>
+                <p>Contact no:968745XXXX</p>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NISARG PATEL. All Rights Reserved.   </p>
+        </div>
+    </footer>
+</body>
+</html>
